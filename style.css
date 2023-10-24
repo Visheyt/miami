@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'EB Garamond', serif;
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.wrapper {
+    margin: 0 auto;
+    max-width: 1260px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+header {
+    max-width: 1260px;
+    display: flex;
+   flex-direction: column;
+   background-image: url(images/BackgroundDeckstop.png);
+   height: 700px;
+}
+nav {
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger_menu {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.burger_menu span {
+    margin-top: 4px;
+    display: block;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 24px;
+    height: 1px;
+}
+.burger_menu:hover span:first-child{
+    transition: all 0.5s;
+    width:18px ;
+}
+.burger_menu:hover span:last-child {
+    width: 10px;
+    transition: all 0.5s;
+}
+.logo {
+    max-width: 136px;
+    height: auto;
+}
+.tel_icon {
+    margin-top: 24px;
+    width: 32px;
+    height: 32px;
+}
+.logo_text_container {
+    display: flex;
+    flex-direction: column;
+    max-width: 498px;
+    height: auto;
+    margin-left: 120px;
+}
+h1 {
+    color: white;
+    margin-top: 24px;
+    font-size: 80px;
+}
+h1::before {
+    margin-top: 329px;
+    display: block;
+    content: "";
+    width: 40px;
+    height: 1px;
+    background-color: white;
+    border: 1px solid white;
+}
+.about_us {
+    display: flex;
+    margin-top: 104px;
+}
+.about_us_left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    width: 324px;
+    height: auto;
+}
+.about_us_text {
+    font-size: 48px;
+}
+.about_us_text span{
+    color: rgb(0, 117, 255);
+
+}
+.about_us_right {
+    margin-left: 198px;
+    max-width: 498px;
+}
+.about_us_right h3 {
+    font-size: 24px;
+    color: rgb(0, 117, 255);
+}
+.information {
+    font-size: 16px;
+    margin-top: 16px;
+}
+.information_last {
+    font-weight: 600;
+    margin-top: 20px;
+}
+.gallery {
+    margin-top: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.section_name {
+    font-size: 48px;
+}
+.gallery_block_one {
+    display: flex;
+    flex-direction: column;
+    margin-top: 56px;
+}
+.img_block_one {
+    display: flex;
+    gap: 24px;
+}
+.gallery_block_one p {
+    margin-top: 19px;
+    font-size: 16px;
+}
+.gallery_block_one p span {
+    color: rgb(0, 117, 255);
+}
+.gallery_block_two {
+    display: flex;
+    flex-direction: column;
+    margin-top: 45px;
+}
+.img_block_two {
+    display: flex;
+    gap: 24px;
+}
+.gallery_block_two p {
+    margin-top: 19px;
+    font-size: 16px;
+}
+.gallery_block_two p span {
+    color: rgb(0, 117, 255);
+}
+.gallery_block_three {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.img_block_three {
+    display: flex;
+    gap: 24px;
+}
+.gallery_block_three p {
+    margin-top: 19px;
+    font-size: 16px;
+}
+.gallery_block_three p span {
+    color: rgb(0, 117, 255);
+}
+.gallery button {
+    margin-top: 32px;
+    width: 150px;
+    height: 56px;
+    border: 2px solid rgb(0, 117, 255);
+    background-color: white;
+    color: rgb(0, 117, 255);
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.gallery button:hover {
+    color: white;
+    border: 0px;
+    transition: all 0.6s;
+    background-color: rgb(0, 94, 204);
+    filter: drop-shadow(0px 5px 5px rgb(0, 94, 204));
+
+}
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 104px;
+}
+.realtors {
+    display: flex;
+    margin-top: 56px;
+    gap: 24px;
+}
+.realtor_one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 324px;
+    height: 301px;
+}
+.realtor_one h4 {
+    margin-top: 32px;
+    color: rgb(0, 117, 255);
+    font-size: 24px;
+}
+.realtor_one span {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(159, 173, 194);
+}
+.realtor_one p {
+    margin-top: 4px;
+    text-align: center;
+}
+.realtor_two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 324px;
+    height: 301px;
+}
+.realtor_two h4 {
+    margin-top: 32px;
+    color: rgb(0, 117, 255);
+    font-size: 24px;
+}
+.realtor_two span {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(159, 173, 194);
+}
+.realtor_two p {
+    margin-top: 4px;
+    text-align: center;
+}
+.realtor_three {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 324px;
+    height: 301px;
+}
+.realtor_three h4 {
+    margin-top: 32px;
+    color: rgb(0, 117, 255);
+    font-size: 24px;
+}
+.realtor_three span {
+    margin-top: 4px;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(159, 173, 194);
+}
+.realtor_three p {
+    margin-top: 4px;
+    text-align: center;
+}
+.contact_us {
+    margin-top: 104px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact_blocks {
+    display: flex;
+    gap: 198px;
+    margin-top: 69px;
+}
+.contact_us_left {
+    display: flex;
+    gap: 111px;
+}
+.phone_email {
+    display: flex;
+    flex-direction: column;
+}
+.phone_email h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(159, 173, 194);
+}
+.phone_email h5:last-of-type {
+    margin-top: 24px;
+}
+.phone_email a {
+    margin-top: 8px;
+}
+.adress {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.adress h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(159, 173, 194);
+}
+.adress p {
+    line-height: 22px;
+}
+.consult_form {
+    display: flex;
+    flex-direction: column;
+    width: 411px;
+    height: 376px;
+    gap: 16px;
+}
+#name {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 17px;
+    height: 20px;
+    background-color: rgb(246, 248, 255);
+    border: 1px solid rgb(246, 248, 255);
+    border-radius: 8px;
+    cursor: pointer;
+}
+#name:hover {
+    border: 1px solid rgb(143, 153, 168);
+}
+#name:focus{
+    outline: 1px solid blue;
+}
+#email {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 17px;
+    height: 20px;
+    background-color: rgb(246, 248, 255);
+    border-radius: 8px;
+    border: 1px solid rgb(246, 248, 255);
+    cursor: pointer;
+}
+#email:hover {
+    border: 1px solid rgb(143, 153, 168);
+}
+#email:focus{
+    outline: 1px solid blue;
+}
+#message {
+    padding-top: 14px;
+    padding-bottom: 110px;
+    padding-left: 17px;
+    background-color: rgb(246, 248, 255);
+    border-radius: 8px;
+    border: 1px solid rgb(246, 248, 255);
+    cursor: pointer;
+}
+#message:hover {
+    border: 1px solid rgb(143, 153, 168);
+}
+#message:focus{
+    outline: 1px solid blue;
+}
+.form_button {
+    margin-top: 16px;
+    width: 411px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: rgb(0, 117, 255);
+    border: 0px;
+    border-radius: 8px;
+    filter: drop-shadow(0px 3px 3px rgb(0, 117, 255));
+    cursor: pointer;
+}
+.form_button:hover {
+    transition: all 0.5s;
+    background-color: rgb(0, 94, 204);
+    filter: drop-shadow(0px 5px 5px rgb(0, 94, 204));
+
+}
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 104px;
+    background-image: url(images/BackgroundFooter.png);
+    height: 359px;
+    
+}
+footer img{
+    margin-bottom: 32px;
+    
+}
