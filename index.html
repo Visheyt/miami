@@ -8,26 +8,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="styleMobile.css" media="only screen and (max-width:320px)">
 </head>
 <body>
     <div class="wrapper">
         <header>
             <nav>
-                <div class="burger_menu">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                <ul class="menu">
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#aboutUs">ABOUT US</a></li>
+                    <li><a href="#home">GALLERY</a></li>
+                    <li><a href="#home">TESTIMONIALS</a></li>
+                    <li><a href="#home">CONTACTS</a></li>
+                </ul>
+                <div class="burger_tel">
+                    <a href="tel:+1 234 555-55-55">+1 234 555-55-55</a>
+                    <p>CALL TO ORDER</p>
                 </div>
+            </nav>
+            <div class="header_top">
+                <div class="burger_menu">
+                    <span class="burger_menu_elems"></span>
+                    <span class="burger_menu_elems"></span>
+                    <span class="burger_menu_elems"></span>
+                    
+                </div>
+                
                 <img class="logo" src="images/Logo_Miami.png" alt="logo">
                 <img class="tel_icon" src="images/Icon-Phone-call.png" alt="tel_icon">
-            </nav>
+            </div>
             <div class="logo_text_container">
                 <h1>Miami <br>
                     Condo Kings</h1>
             </div> 
         </header>
-        <section class="about_us">
+        <section class="about_us" id="aboutUs">
             <div class="about_us_left">
                 <h2 class="about_us_text">Miami best Real estate <span>here</span> </h2>
             </div>
@@ -124,6 +139,6 @@
             <img src="images/Logo_Miami.png" alt="">
         </footer>
     </div>
-    
+    <script src="script.js"></script>
 </body>
 </html>

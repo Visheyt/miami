@@ -1,0 +1,161 @@
+.wrapper {
+    max-width: 320px;
+}
+header {
+    max-width: 320px;
+    height: 568px;
+    background-image: url(images/BackgroundMobile.jpg);
+}
+.header_top {
+    margin-left: 20px;
+    margin-right: 20px;
+    gap: 75px;
+}
+.burger_menu {
+    margin-top: 20px;
+}
+.logo {
+    width: 82px;
+    height: 48px;
+}
+.tel_icon {
+    margin-top: 20px;
+    width: 24px;
+    height: 24px;
+}
+.logo_text_container {
+    max-width: 280px;
+    height: auto;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+h1{
+    font-size: 46px;
+}
+.about_us {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+}
+.about_us_left {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 240px;
+}
+.about_us_text {
+    font-size: 36px;
+}
+.about_us_right {
+    margin-left: 20px;
+    max-width: 279px;
+    margin-top: 48px;
+}
+.gallery {
+    margin-top: 64px;
+
+}
+.section_name {
+    font-size: 36px;
+}
+.gallery_block_one {
+    width: 280px;
+    margin-top: 29px;
+}
+.img_block_one {
+    gap: 19px;
+}
+.img_block_one img {
+    width: 131px;
+    height: 131px;
+}
+.gallery_block_two {
+    width: 280px;
+    margin-top: 32px;
+}
+.img_block_two {
+    gap: 19px;
+}
+.img_block_two img{
+    width: 131px;
+    height: 131px;
+}
+.gallery_block_three {
+    width: 280px;
+    margin-top: 32px;
+}
+.img_block_three {
+    display: flex;
+    gap: 19px;
+}
+.img_block_three img {
+    width: 131px;
+    height: 131px;
+}
+.gallery button {
+    width: 280px;
+    height: 56px;
+}
+.testimonials {
+    margin-top: 64px;
+
+}
+.realtors {
+    display: flex;
+    flex-direction: column;
+    margin-top: 29px;
+    gap: 48px;
+}
+.contact_us {
+    margin-top: 64px;
+
+}
+.contact_blocks {
+    gap: 32px;
+    margin-top: 29px;
+    flex-direction: column;
+}
+.contact_us_left {
+    flex-direction: column;
+    gap: 24px;
+}
+.phone_email {
+    gap: 8px;
+}
+.consult_form {
+    width: 280px;
+    height: 361px;
+}
+#name {
+    height: 48px;
+}
+#email {
+    height: 48px;
+}
+#message {
+    height: 144px;
+}
+.form_button {
+    margin-top: 32px;
+    width: 280px;
+}
+footer {
+    background-image: url(images/BackgroundFooterMobile.png);
+    height: 206px;
+}
+footer img{
+    width: 82px;
+    height: 48px;
+    margin-bottom: 24px;
+}
+nav {
+    width: 320px;
+    height: 568px;
+}
+.menu {
+    margin-left: 20px;
+    margin-top: 120px;
+}
+.burger_tel {
+    margin-left: 20px;
+}

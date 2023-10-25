@@ -8,6 +8,9 @@ a {
     text-decoration: none;
     color: black;
 }
+ul {
+    list-style-type: none;
+}
 .wrapper {
     margin: 0 auto;
     max-width: 1260px;
@@ -21,8 +24,9 @@ header {
    flex-direction: column;
    background-image: url(images/BackgroundDeckstop.png);
    height: 700px;
+   position: relative;
 }
-nav {
+.header_top {
     margin-left: 120px;
     margin-right: 120px;
     margin-top: 24px;
@@ -37,8 +41,11 @@ nav {
     width: 32px;
     height: 32px;
     cursor: pointer;
+    z-index: 2;
 }
 .burger_menu span {
+    transition: all 0.5s;
+    z-index: 2;
     margin-top: 4px;
     display: block;
     background-color: white;
@@ -47,6 +54,7 @@ nav {
     width: 24px;
     height: 1px;
 }
+/*
 .burger_menu:hover span:first-child{
     transition: all 0.5s;
     width:18px ;
@@ -54,10 +62,65 @@ nav {
 .burger_menu:hover span:last-child {
     width: 10px;
     transition: all 0.5s;
+}*/
+nav {
+    transform: translateX(-1260px);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(0, 117, 255);
+    width: 1260px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    transition: all 0.5s;
+    opacity: 0;
+}
+header.active nav {
+    opacity: 1;
+    transform: translateX(0);
+}
+header.active .burger_menu span:first-of-type {
+    transform: translateY(2px) rotate(45deg);
+}
+header.active .burger_menu span:last-of-type {
+    transform: translateY(-4px)rotate(-45deg);
+}
+header.active .burger_menu span:nth-child(2) {
+    display: none;
+}
+.menu {
+    margin-top: 152px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.menu a {
+    color: white;
+    font-weight: 400;
+    font-size: 22px;
+}
+.burger_tel {
+    margin-left: 120px;
+    margin-top: 48px;
+}
+.burger_tel a {
+    font-size: 12px;
+    color: white;
+}
+.burger_tel p {
+    margin-top: 16px;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
 }
 .logo {
     max-width: 136px;
     height: auto;
+    position: relative;
+    z-index: 2;
 }
 .tel_icon {
     margin-top: 24px;
